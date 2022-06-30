@@ -1,0 +1,114 @@
+:host {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0px;
+    position: relative;
+    height: 100%;
+}
+
+.bgimage {
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 100%;
+    height: 72%;
+    border-radius: 15px;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 8px;
+    width: 100%;
+    height: 106px;
+}
+
+.cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    height: 73px;
+}
+
+.link {
+    width: 100%;
+    height: 21px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--secondary01);
+}
+
+.link__alone {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100%;
+    height: 48px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 150%;
+    text-align: center;
+    text-decoration-line: underline;
+    color: var(--secondary01);
+}
+
+.card-name {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: flex-start;
+    padding: 0px;
+    width: 100%;
+    height: 48px;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--black);
+}
+
+/* Mobile */
+@media (max-width: 375px) {
+    .container {
+        position: absolute;
+        max-height: 330.71px;
+        max-width: 343px;
+        width: 100%;
+        height: 100%;
+    }
+
+    .bgimage {
+        /* width: 343px;
+        height: 216.71px; */
+        border-radius: 10px;
+    }
+
+    /* .content {
+        width: 343px;
+        height: 106px;
+    }
+
+    .link {
+        width: 327px;
+    }
+
+    .card-name {
+        width: 327px;
+    } */
+}

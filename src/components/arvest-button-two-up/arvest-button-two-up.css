@@ -1,0 +1,36 @@
+:host {
+  display: grid;
+  grid-column-gap: var(--spacing01);
+  grid-template-columns: 1fr 1fr;
+  width: max-content;
+}
+
+a {
+  display: flex;
+}
+
+arvest-button-primary,
+arvest-button-secondary,
+a {
+  /* 0px instead of 0 needed for IE */
+  flex: 1 1 0px;
+  flex-basis: 0;
+}
+
+.cta-secondary-button {
+  margin-bottom: var(--spacing01);
+}
+
+.cta-secondary-button.small {
+  margin-bottom: var(--spacing00);
+}
+
+/* Switch to single column at tablet and below */
+@media (max-width: 776px) {
+  :host {
+    display: grid;
+    grid-column-gap: 0;
+    grid-template-columns: 1fr;
+    width: max-content;
+  }
+}

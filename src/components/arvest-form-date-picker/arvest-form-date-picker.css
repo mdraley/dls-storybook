@@ -1,0 +1,90 @@
+:root {
+  --duet-color-primary: #005fcc;
+  --duet-color-text: var(--black);
+  --duet-color-text-active: #fff;
+  --duet-color-placeholder: #666;
+  --duet-color-button: #f5f5f5;
+  --duet-color-surface: var(--white);
+  --duet-color-overlay: rgba(0, 0, 0, 0.8);
+  --duet-color-border: none;
+
+  --duet-font: var(--font-family-sans-serif);
+  --duet-font-normal: 400;
+  --duet-font-bold: 600;
+
+  --duet-radius: 2px;
+  --duet-z-index: 600;
+}
+
+:host {
+  display: block;
+}
+
+.duet-date__input {
+  box-shadow: 0 1px 3px #9395A1 !important;
+  height: 56px;
+  padding: 24px 60px 14px 14px !important;
+}
+
+.duet-date__input:focus-visible {
+  box-shadow: 0 2px 6px rgba(147, 149, 161, 0.8) !important;
+  outline: -webkit-focus-ring-color auto 1px; !important;
+}
+
+.duet-date__input:hover {
+  box-shadow: 0 3px 6px rgba(147, 149, 161, 0.8) !important;
+  outline: 0 !important;
+}
+
+.duet-date__day.is-today {
+  box-shadow: none !important;
+}
+
+.duet-date__day.is-today:hover {
+  background: var(--hover02) !important;
+}
+
+.duet-date__day.is-today::before {
+  background: none !important;
+}
+
+.duet-date__select:focus-visible, .duet-date__select-label:focus-visible {
+  outline: none !important;
+}
+
+button.duet-date__toggle:focus-visible {
+  outline: -webkit-focus-ring-color auto 1px;
+}
+
+.duet-date__toggle {
+  box-shadow: none !important;
+  background: var(--white) !important;
+}
+
+label.date-picker {
+  color: var(--grayscale06);
+  cursor: text;
+  display: inline-block;
+  left: 13px;
+  position: relative;
+  top: 40px;
+  transition: all 0.4s;
+  z-index: 601;
+  font-size: 100%;
+  font-weight: 400;
+}
+
+label.date-picker.focused {
+  top: 22px;
+  font-size: 72%;
+}
+
+.date-picker-error {
+  margin-top: 3px;
+  color: var(--accessible-red);
+}
+
+.duet-date__input:disabled {
+  background-color: #e9ecef;
+  opacity: 1;
+}

@@ -1,0 +1,142 @@
+:host {
+  display: block;
+  z-index: 999;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  position: relative;
+  margin: var(--spacing02);
+  background-color: var(--white);
+  border-radius: var(--spacing01) 2px 2px 2px;
+  box-shadow: 0 0 8px rgba(147, 149, 161, 0.7);
+}
+
+.card-copy {
+  display: flex;
+  width: 34%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: var(--spacing02);
+}
+
+.card-title {
+  margin-bottom: var(--spacing02);
+}
+
+.card-list {
+  display: flex;
+  width: 33%;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  margin: var(--spacing02);
+  padding: 0 var(--spacing03);
+  border-left: 1px solid var(--grayscale05)
+}
+
+.card-list ul {
+  margin-left: 0;
+  padding-left: var(--spacing01);
+  list-style: none;
+}
+
+.card-list ul li::before {
+  content: "\2022";
+  color: red;
+  font-weight: bold;
+  display: inline-block;
+  position: absolute;
+  width: 1em;
+  margin-left: -1em;
+}
+
+.icons {
+  margin-bottom: var(--spacing02);
+  display: flex;
+  justify-content: flex-start;
+}
+
+.icon-list .icon-wrapper, .legend .icon-wrapper{
+  float: left;
+  background-color: var(--primary02);
+  border-radius: 50%;
+  margin: 0 var(--spacing00) var(--spacing00) 0;
+  padding: 3px;
+}
+
+.icons .icon-wrapper arvest-icon {
+  filter: invert();
+}
+
+.info {
+  display: none;
+  float: left;
+  margin: -2px var(--spacing00) var(--spacing00) 0;
+}
+
+.card-cta {
+  display: flex;
+  width: 33%;
+  justify-content: flex-end;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  margin: var(--spacing02);
+}
+
+.cta-primary {
+  margin-left: var(--spacing00);
+}
+
+.cta-secondary {
+  display: block;
+}
+
+/* Mobile */
+@media (max-width: 767px) {
+  .card-container {
+    flex-direction: column;
+  }
+
+  .card-copy {
+    width: revert;
+    margin: var(--spacing01);
+  }
+
+  .card-list {
+    width: revert;
+    border-left: 0;
+    margin: var(--spacing01);
+    padding: 0;
+  }
+
+  .info {
+    display: block;
+    filter: invert(45%) sepia(1%) saturate(2049%) hue-rotate(192deg) brightness(96%) contrast(88%);
+    cursor: pointer;
+  }
+
+  .card-cta {
+    width: revert;
+    margin: var(--spacing01);
+  }
+
+  .legend {
+    margin-top: var(--spacing02);
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+
+  .legend .icon-wrapper{
+    float: left;
+    background-color: var(--primary02);
+    border-radius: 50%;
+    margin: 0 var(--spacing00) var(--spacing01) 0;
+    padding: 3px;
+  }
+
+  .legend arvest-icon {
+    filter: invert();
+  }
+}

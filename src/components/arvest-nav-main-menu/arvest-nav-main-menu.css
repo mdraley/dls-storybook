@@ -1,0 +1,242 @@
+:host {
+  display: block;
+}
+
+.wrapper {
+  background-color: transparent;
+}
+
+ul {
+  padding: 0;
+  margin-top: 7px;
+}
+
+ul li {
+  display: inline-block;
+  list-style: none;
+  min-height: 35px;
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
+}
+
+/** Main Style  */
+
+ul.main li a {
+  color: var(--white);
+  text-decoration: inherit;
+  transition: color 0.5s ease;
+}
+
+ul.main:hover li a {
+  color: var(--grayscale05);
+  text-decoration: inherit;
+  transition: color 0.5s ease;
+}
+
+ul.main li ul li a {
+  color: var(--black);
+  text-decoration: inherit;
+  transition: color 0.5s ease;
+}
+
+ul.main li:hover a {
+  color: var(--white);
+  transition: color 0.5s ease;
+}
+
+/** Microsite Style  **/
+
+ul.micro li a {
+  color: var(--black);
+  text-decoration: inherit;
+  transition: color 0.5s ease;
+}
+
+ul.micro:hover li a {
+  color: var(--grayscale05);
+  text-decoration: inherit;
+  transition: color 0.5s ease;
+}
+
+ul.micro li:hover a {
+  color: var(--black);
+  transition: color 0.5s ease;
+}
+
+ul li.bottom-row-icon {
+  align-items: center;
+  display: flex;
+  margin-right: var(--spacing01);
+}
+
+ul li ul.sub-nav {
+  display: grid;
+  visibility: hidden;
+  grid-template-columns: 16% 16% 16% 16% 18% 18%;
+  grid-template-rows: 100%;
+  grid-auto-flow: column;
+  margin-block-start: 0;
+  margin-block-end: 0;
+  position: absolute;
+  top: 143px;
+  left: 0;
+  right: 0;
+  height: 222px;
+  padding: 25px 0 25px 0;
+  opacity: 0;
+}
+
+ul.main li ul.sub-nav {
+  background-color: var(--white);
+  top: 143px;
+}
+
+ul.micro li ul.sub-nav {
+  background-color: var(--grayscale01);
+  top: 135px;
+}
+
+ul li.main-menu:hover ul.sub-nav {
+  visibility: visible;
+  opacity: 1;
+}
+
+ul.sub-nav li.section {
+  border-left: 0.5px solid var(--grayscale05);
+  padding: 0 12px 0 12px;
+}
+
+ul.sub-nav li.section:first-child {
+  border-left: 0.5px solid var(--grayscale05);
+  padding: 0 12px 0 24px;
+}
+
+ul.sub-nav li.section.double {
+  grid-column: span 2;
+}
+
+ul.sub-nav li.section:first-child, ul.sub-nav li.ad-section {
+  border-left: 0;
+}
+
+ul.sub-nav li.ad-section {
+  padding-left: 0;
+}
+
+ul.sub-nav li.section ul {
+  display: grid;
+  grid-template-rows: 42px 36px 36px 36px 36px 36px;
+  grid-auto-flow: column;
+}
+
+ul.sub-nav li.section ul li {
+  display: flex;
+}
+
+ul.sub-nav li.section ul li.double {
+  grid-column: 1 / span 2;
+}
+
+li.section a arvest-typography {
+  display: inline-block;
+  color: var(--black);
+  padding: 1px 3px 1px 3px;
+}
+
+li.section a:hover arvest-typography {
+  background-color: var(--hover03);
+}
+
+.ad.double {
+  display: flex;
+  grid-column: 5 / span 2;
+  justify-content: flex-end;
+  padding-left: 0;
+}
+
+.subheading {
+  color: var(--grayscale06);
+  padding: 1px 3px 1px 3px;
+}
+
+arvest-badge {
+  left: 3px;
+  top: -8px;
+  position: relative;
+}
+
+arvest-accordion {
+  background-color: var(--white);
+}
+
+.custom-text-decoration {
+  display: block;
+  position: relative;
+  background-color: var(--accent01);
+  height: var(--spacing00);
+  border-radius: 6px 0;
+  margin-top: 6px;
+  z-index: 1;
+}
+
+@media (max-width: 1241px) {
+  .wrapper.open {
+    background-color: var(--white);
+  }
+
+  /* Accordion Menu Styles */
+  ul {
+    margin: -1px var(--spacing01);
+    padding-top: var(--spacing01);
+    transform: translateY(0px);
+  }
+
+  ul:hover a {
+    color: var(--black);
+  }
+
+  ul li {
+    display: block;
+    margin: 4px 0 4px 0;
+    padding: 0;
+  }
+
+  ul.main li:hover a, ul.micro li:hover a {
+    color: var(--black);
+    transition: color 0.5s ease;
+  }
+
+  ul.main li a, ul.micro li a {
+    display: flex;
+    color: var(--black);
+  }
+
+  ul li a:hover arvest-typography {
+    color: var(--hover04);
+  }
+
+  ul li a arvest-button-primary {
+    margin-top: var(--spacing00);
+  }
+
+  arvest-typography.subheading {
+    color: var(--black);
+    margin: var(--spacing02) 0 var(--spacing01) 0;
+  }
+
+  arvest-typography.subheading:first-child {
+    margin-top: 0;
+  }
+
+  arvest-typography.navigation {
+    margin-bottom: var(--spacing00);
+  }
+
+  .mobile-subnav-spacer {
+    height: 0.2rem;;
+  }
+
+  .custom-text-decoration {
+    background-color: transparent;
+  }
+}

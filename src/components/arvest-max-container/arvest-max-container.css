@@ -1,0 +1,9 @@
+:host {
+  display: flex;
+  justify-content: center;
+}
+
+.max-container {
+  box-sizing: border-box;
+  max-width: 1140px;
+}

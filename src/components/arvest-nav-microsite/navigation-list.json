@@ -1,0 +1,516 @@
+{
+  "navigation": [
+    {
+      "name": "Home",
+      "href": "#",
+      "subNav": []
+    },
+    {
+      "name": "Personal",
+      "href": "#",
+      "subNav": [
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Apply Now",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Checking",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Savings",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Credit Card",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "button",
+              "name": "Open an account",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Banking services",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Online & Mobile",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Checking",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Savings",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Credit Card",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Tools & resources",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Calculators",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Deposit Rates",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Fee Schedule",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Order Checks",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Business",
+      "href": "#",
+      "subNav": [
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Banking services",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Online & Mobile",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Checking",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Savings",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Credit Card",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Tools & resources",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Calculators",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Deposit Rates",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Fee Schedule",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Order Checks",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Credit Cards",
+      "href": "#",
+      "subNav": [
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Apply Now",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Checking",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Savings",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Credit Card",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "button",
+              "name": "Open an account",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Banking services",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Online & Mobile",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Checking",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Savings",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Credit Card",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Tools & resources",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Calculators",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Deposit Rates",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Fee Schedule",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Order Checks",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Home Loans",
+      "href": "#",
+      "subNav": [
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Banking services",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Online & Mobile",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Checking",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Savings",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Credit Card",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Tools & resources",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Calculators",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Deposit Rates",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Fee Schedule",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Order Checks",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "name": "Investments & Trusts",
+      "href": "#",
+      "subNav": [
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Apply Now",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Checking",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Savings",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Credit Card",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Subnavigation Item",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Subnavigation Item",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Subnavigation Item",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Subnavigation Item",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "button",
+              "name": "Open an account",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Banking services",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Online & Mobile",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Checking",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Savings",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Credit Card",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "section": [
+            {
+              "type": "heading",
+              "name": "Tools & resources",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Calculators",
+              "href": "#",
+              "isNew": true
+            },
+            {
+              "type": "link",
+              "name": "Deposit Rates",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Fee Schedule",
+              "href": "#",
+              "isNew": false
+            },
+            {
+              "type": "link",
+              "name": "Order Checks",
+              "href": "#",
+              "isNew": false
+            }
+          ]
+        },
+        {
+          "section": [
+            {
+              "type": "ad",
+              "adMessage": "Lorem ipsum dolor sit amet duis alt.",
+              "adCtaTitle": "Learn More",
+              "adCtaUrl": "#",
+              "adBgColor": "ocean"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+:host {
+  display: inline-block;
+  width: max-content;
+}
+
+.button-outline {
+  font-family: "proxima-nova", "Helvetica Neue", "Arial";
+  padding: 3px 1.5rem;
+  background-color: transparent;
+  border: solid 1px var(--white);
+}

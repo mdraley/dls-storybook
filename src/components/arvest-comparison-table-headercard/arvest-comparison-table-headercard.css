@@ -1,0 +1,37 @@
+:host {
+  display: block;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--spacing01);
+  border: 1px solid var(--grayscale02);
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.card-container--withcolor {
+  background-color: var(--tint01);
+}
+
+.card-content {
+  text-align: center;
+  padding-bottom: var(--spacing01);
+}
+
+@media (max-width: 768px) {
+  .card-container {
+    align-items: flex-start;
+    box-shadow: 0 0 6px var(--shadow01);
+    border-radius: 16px 2px 2px 2px;
+    width: 60vw;
+    background-color: white;
+  }
+
+  .card-content {
+    text-align: left;
+  }
+}

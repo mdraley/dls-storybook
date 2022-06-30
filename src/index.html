@@ -1,0 +1,1155 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=5.0"
+    />
+    <title>Arvest Web Components</title>
+
+    <!-- Import Arvest Web Component Library -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://use.typekit.net/uhm3box.css"
+    />
+    <link rel="stylesheet" type="text/css" href="/build/arveststencil.css" />
+    <script type="module" src="/build/arveststencil.esm.js"></script>
+    <script nomodule src="/build/arveststencil.js"></script>
+    <!-- END Import Arvest Web Component Library -->
+
+    <style type="text/css">
+      section {
+        margin: 50px 0 20px;
+      }
+
+      .arvest-container {
+        margin: 0 3% 5%;
+      }
+
+      .swatch-container {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+        grid-auto-rows: minmax(160px, auto);
+      }
+
+      .swatch {
+        border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+      }
+
+      .swatch p {
+        margin: 0 0 5px;
+      }
+
+      .secondary-reverse-wrapper {
+        background-color: var(--primary02);
+        margin: 0;
+        padding: 1rem;
+      }
+
+      .tooltip-container {
+        margin: 0 3% 5%;
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 16px;
+        grid-auto-rows: minmax(160px, auto);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h2">
+          Arvest Web Component Library
+        </arvest-typography>
+        <hr />
+      </section>
+
+      <section>
+        <arvest-typography variant="h3">
+          Primary Hero Carousel
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-primary-hero-carousel
+      headline="Lorem ipsum dolor"
+      slides='[
+        {
+          "label": "Credit Card",
+          "src": "https://arvest.com/images/dls/2000x900/1.jpg",
+          "headline": "Lorem ipsum dolor sit amet consectetur adipisicing elit."
+        },
+        {
+          "label": "Cool Blue Savings",
+          "src": "https://arvest.com/images/dls/2000x900/2.jpg",
+          "headline":"Nostrum porro eveniet, accusamus quam suscipit aspernatur ad molestias."
+        },
+        {
+          "label": "Business Loans",
+          "src": "https://arvest.com/images/dls/2000x900/3.jpg",
+          "headline": "Pariatur placeat, earum excepturi adipisci deserunt fugit laudantium."
+        },
+        {
+          "label": "Zelle",
+          "src": "https://arvest.com/images/dls/2000x900/4.jpg",
+          "headline": "Consequuntur in temporibus quibusdam. Soluta."
+        }
+      ]'
+    ></arvest-primary-hero-carousel>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Secondary Hero</arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-secondary-hero
+      title="Lorem ipsum, dolor sit"
+    ></arvest-secondary-hero>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Nav Bar</arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-nav
+      searchbarlinks='[
+      {"label":"Find my routing number", "href":"https://arvest.com"},
+      {"label":"Apply for a loan", "href":"https://arvest.com"},
+      {"label":"Open an account", "href":"https://arvest.com"},
+      {"label":"Order / reorder checks", "href":"https://arvest.com"}
+    ]'
+    ></arvest-nav>
+    <div class="arvest-container" style="height: 250px;"></div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Nav Bar Microsite</arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-nav-microsite
+      searchbarlinks='[
+      {"label":"Find my routing number", "href":"https://arvest.com"},
+      {"label":"Apply for a loan", "href":"https://arvest.com"},
+      {"label":"Open an account", "href":"https://arvest.com"},
+      {"label":"Order / reorder checks", "href":"https://arvest.com"}
+    ]'
+    ></arvest-nav-microsite>
+    <div class="arvest-container" style="height: 250px;"></div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Badges</arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <div class="arvest-container">
+      Label:  <arvest-badge color="label">New</arvest-badge><br>
+      Counter:  <arvest-badge color="counter">37</arvest-badge>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Breadcrumbs</arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <div class="arvest-container">
+      <arvest-breadcrumb links='[
+        {"title":"Home","url":"#"},
+        {"title":" Secondary","url":"#secondary"},
+        {"title":" Tertiary","url":"#tertiary"},
+        {"title":" Quaternary","url":"#quaternary"},
+        {"title":" Quinary","url":"#quinary"},
+        {"title":" Senary","url":"#senary"}
+      ]'>
+      </arvest-breadcrumb>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Progress Stepper</arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <div class="arvest-container">
+      <arvest-stepper
+        step-titles="Long Step 1 Title,Step 2,Step 3,Step 4,Step 5"
+        step-urls="#step-1,#step-2,#step-3,#step-4,#step-5"
+        step-states="complete,complete,complete,active,incomplete"
+      >
+      </arvest-stepper>
+      <br>
+      <arvest-stepper
+        step-titles="Long Step 1 Title,Step 2,Step 3,Step 4"
+        step-urls="#step-1,#step-2,#step-3,#step-4"
+        step-states="complete,complete,active,incomplete"
+      >
+      </arvest-stepper>
+      <br>
+      <arvest-stepper
+        step-titles="Long Step 1 Title,Step 2,Step 3"
+        step-urls="#step-1,#step-2,#step-3"
+        step-states="complete,active,incomplete"
+      >
+      </arvest-stepper>
+      <br>
+      <arvest-stepper
+        step-titles="Long Step 1 Title,Step 2"
+        step-urls="#step-1,#step-2"
+        step-states="active,incomplete"
+      >
+      </arvest-stepper>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Comparison Table</arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-comparison-table></arvest-comparison-table>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Accordion</arvest-typography>
+        <hr />
+      </section>
+      <arvest-accordion type="table-simple" accordiontitle="Table Simple Accordion Title" style="width: 340px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nunc elit. In hac habitasse
+        platea dictumst. Nunc bibendum dignissim diam, non tempor ligula varius id. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit. Suspendisse at nunc elit. In hac habitasse platea dictumst.
+      </arvest-accordion>
+      <br />
+      <arvest-accordion type="content" accordiontitle="Content Accordion Title" style="width: 300px;">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse at nunc elit. Lorem ipsum dolor sit amet,
+        consectetur adipiscing elit.
+      </arvest-accordion>
+    </div>
+
+    <div class="arvest-container" style="display: flex; justify-content: space-between;">
+      <section>
+        <arvest-typography variant="h3">Tooltip</arvest-typography>
+        <hr />
+      </section>
+    </div>
+
+    <div class="tooltip-container">
+      <div>
+        Lorem ipsum
+        <arvest-tooltip position="top-center" message="Nunc bibendum dignissim">
+          <b>default</b>
+        </arvest-tooltip> sit amet.
+      </div>
+      <div>
+        Lorem ipsum
+        <arvest-tooltip
+          position="top-center"
+          message="Nunc bibendum dignissim"
+          arrow="true"
+          cta-type="text"
+          cta-url="#tooltip-text-cta"
+          cta-title="Open Account"
+        >
+          <b>text CTA</b>
+        </arvest-tooltip> sit amet.
+      </div>
+      <div>
+        Lorem ipsum
+        <arvest-tooltip
+          position="top-center"
+          message="Nunc bibendum dignissim"
+          arrow="true"
+          cta-type="button"
+          cta-url="#tooltip-button-cta"
+          cta-title="Cancel Application"
+        >
+          <b>button CTA</b>
+        </arvest-tooltip> sit amet.
+      </div>
+      <div>
+        Lorem ipsum
+        <arvest-tooltip position="top-left" message="Nunc bibendum dignissim" arrow="true">
+          <b>top-left</b>
+        </arvest-tooltip> sit amet.
+      </div>
+      <div>
+        Lorem ipsum
+        <arvest-tooltip position="top-center" message="Nunc bibendum dignissim" arrow="true">
+          <b>top-center</b>
+        </arvest-tooltip> sit amet.
+      </div>
+      <div>
+        Lorem ipsum
+        <arvest-tooltip position="top-right" message="Nunc bibendum dignissim" arrow="true">
+          <b>top-right</b>
+        </arvest-tooltip> sit amet.
+      </div>
+      <div>
+        Lorem ipsum
+        <arvest-tooltip position="bottom-left" message="Nunc bibendum dignissim" arrow="true">
+          <b>bottom-left</b>
+        </arvest-tooltip> sit amet.
+      </div>
+      <div>
+        Lorem ipsum
+        <arvest-tooltip position="bottom-center" message="Nunc bibendum dignissim" arrow="true">
+          <b>bottom-center</b>
+        </arvest-tooltip> sit amet.
+      </div>
+      <div>
+        Lorem ipsum
+        <arvest-tooltip position="bottom-right" message="Nunc bibendum dignissim" arrow="true" trigger="click">
+          <b>bottom-right (click)</b>
+        </arvest-tooltip> sit amet.
+      </div>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Typography</arvest-typography>
+        <hr />
+
+        <arvest-typography variant="h1">Headline h1</arvest-typography>
+        <br />
+        <arvest-typography variant="h2">Headline h1</arvest-typography>
+        <br />
+        <arvest-typography variant="h3">Headline h1</arvest-typography>
+        <br />
+        <arvest-typography variant="h4">Headline h1</arvest-typography>
+        <br />
+        <arvest-typography variant="subheading">Subheading</arvest-typography>
+        <br />
+        <arvest-typography variant="body1">Body 1</arvest-typography>
+        <br />
+        <arvest-typography variant="body2">Body 2</arvest-typography>
+        <br />
+        <arvest-typography variant="action">Action</arvest-typography>
+        <br />
+        <arvest-typography variant="navigation">Navigation</arvest-typography>
+        <br />
+        <arvest-typography variant="labels">Labels</arvest-typography>
+        <br />
+        <arvest-typography variant="caption">Caption</arvest-typography>
+      </section>
+
+      <section>
+        <arvest-typography variant="h2">Buttons</arvest-typography>
+        <hr />
+      </section>
+
+      <div>
+        <arvest-typography variant="h4">Primary</arvest-typography>
+      </div>
+      <div style="margin: 20px 0; display: grid; grid-template-columns: 1fr; grid-template-rows: auto; row-gap: 20px;">
+        <arvest-button-primary></arvest-button-primary>
+        <arvest-button-primary disabled></arvest-button-primary>
+        <arvest-button-primary isloading></arvest-button-primary>
+        <arvest-button-primary issmall></arvest-button-primary>
+        <arvest-button-primary issmall isloading></arvest-button-primary>
+      </div>
+
+      <div>
+        <arvest-typography variant="h4">Secondary</arvest-typography>
+      </div>
+      <div style="margin: 20px 0; display: grid; grid-template-columns: 1fr; grid-template-rows: auto; row-gap: 20px;">
+        <arvest-button-secondary></arvest-button-secondary>
+        <arvest-button-secondary disabled></arvest-button-secondary>
+        <arvest-button-secondary isloading></arvest-button-secondary>
+        <arvest-button-secondary issmall></arvest-button-secondary>
+        <arvest-button-secondary issmall isloading></arvest-button-secondary>
+      </div>
+
+      <div>
+        <arvest-typography variant="h4">Secondary Reverse</arvest-typography>
+      </div>
+      <div class="secondary-reverse-wrapper" style="margin: 20px 0; display: grid; grid-template-columns: 1fr; grid-template-rows: auto; row-gap: 20px;">
+        <arvest-button-secondary-reverse></arvest-button-secondary-reverse>
+        <arvest-button-secondary-reverse
+          isloading
+        ></arvest-button-secondary-reverse>
+        <arvest-button-secondary-reverse
+          issmall
+        ></arvest-button-secondary-reverse>
+        <arvest-button-secondary-reverse
+          issmall
+          isloading
+        ></arvest-button-secondary-reverse>
+      </div>
+
+      <div>
+        <arvest-typography variant="h4">Tertiary</arvest-typography>
+      </div>
+      <div style="margin: 20px 0; display: grid; grid-template-columns: 1fr; grid-template-rows: auto; row-gap: 20px;">
+        <arvest-button-tertiary></arvest-button-tertiary>
+        <arvest-button-tertiary disabled></arvest-button-tertiary>
+      </div>
+
+      <div>
+        <arvest-typography variant="h4">Two Up</arvest-typography>
+      </div>
+      <div style="margin: 20px 0; display: grid; grid-template-columns: 1fr; grid-template-rows: auto; row-gap: 20px;">
+        <arvest-button-two-up
+          primary-title="The Primary Title"
+          primary-url="#two-up-primary"
+          secondary-title="Secondary"
+          secondary-url="#two-up-secondary"
+          is-small="false"
+          id="two-up1"
+        ></arvest-button-two-up>
+        <arvest-button-two-up
+          primary-title="Primary"
+          primary-url="#two-up-small-primary"
+          secondary-title="The Secondary Title"
+          secondary-url="#two-up-small-secondary"
+          is-small="true"
+          id="two-up2"
+        ></arvest-button-two-up>
+
+        <script>
+          document.getElementById('two-up1').addEventListener('clickPrimary', () => alert('Primary button click'));
+          document.getElementById('two-up1').addEventListener('clickSecondary', () => alert('Secondary button click'));
+          document.getElementById('two-up2').addEventListener('clickPrimary', () => alert('Primary button click'));
+          document.getElementById('two-up2').addEventListener('clickSecondary', () => alert('Secondary button click'));
+        </script>
+      </div>
+
+      <arvest-typography variant="h2">Scrollbars</arvest-typography>
+      <hr />
+      <br />
+      <arvest-typography variant="h3">Vertical Scrollbar</arvest-typography>
+      <div style="width:600px; height: 200px; overflow-y: scroll; border: 1px solid #ccc; padding: 0 16px;">
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in convallis urna, quis rutrum massa. In feugiat egestas pulvinar. Vivamus lacinia orci et tellus gravida, sit amet dictum nibh commodo. Sed iaculis elementum purus, vulputate volutpat turpis luctus sed. Aenean vitae congue urna. Suspendisse condimentum dapibus malesuada. Duis sapien purus, euismod vel arcu et, cursus lacinia risus. Etiam iaculis placerat ligula, non posuere nunc ullamcorper maximus. Nunc sit amet mollis leo, id auctor elit. Quisque imperdiet posuere augue eu laoreet. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nunc blandit luctus ante a pharetra. Etiam ullamcorper leo id sem varius interdum. Etiam placerat lobortis tincidunt. Praesent lobortis lorem vitae sapien commodo ornare. Fusce mollis mauris at ullamcorper malesuada. Morbi sit amet tristique neque, pretium feugiat felis. Duis porta lacinia tellus nec malesuada. Fusce quis sem lacus. Cras eu ligula diam. Fusce semper sit amet nisl a accumsan. Mauris ultricies leo eget pharetra lacinia. Praesent consectetur maximus augue, tincidunt lobortis risus auctor vel. Phasellus vehicula elit lorem, at finibus purus pharetra scelerisque. Pellentesque ultrices enim vitae accumsan rutrum.</p>
+      </div>
+      <br />
+      <arvest-typography variant="h3">Horizontal Scrollbar</arvest-typography>
+      <div class="secondary-reverse-wrapper" style="width:600px; height: 200px; overflow-x: scroll; border: 1px solid #ccc;">
+        <p style="width:1200px; color: var(--white)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas in convallis urna, quis rutrum massa. In feugiat egestas pulvinar. Vivamus lacinia orci et tellus gravida, sit amet dictum nibh commodo. Sed iaculis elementum purus, vulputate volutpat turpis luctus sed. Aenean vitae congue urna. Suspendisse condimentum dapibus malesuada. Duis sapien purus, euismod vel arcu et, cursus lacinia risus. Etiam iaculis placerat ligula, non posuere nunc ullamcorper maximus. Nunc blandit luctus ante a pharetra. Etiam ullamcorper leo id sem varius interdum. Etiam placerat lobortis tincidunt. Praesent lobortis lorem vitae sapien commodo ornare. Fusce mollis mauris at ullamcorper malesuada. Morbi sit amet tristique neque, pretium feugiat felis. Duis porta lacinia tellus nec malesuada. Fusce quis sem lacus. Cras eu ligula diam. Fusce semper sit amet nisl a accumsan. Mauris ultricies leo eget pharetra lacinia. Praesent consectetur maximus augue, tincidunt lobortis risus auctor vel. Phasellus vehicula elit lorem, at finibus purus pharetra scelerisque. Pellentesque ultrices enim vitae accumsan rutrum.</p>
+      </div>
+      <br />
+      <arvest-typography variant="h3">Both Scrollbars</arvest-typography>
+      <div class="secondary-reverse-wrapper" style="width:600px; height: 200px; overflow: scroll; border: 1px solid #ccc;">
+        <p style="width:1000px; color: var(--white)">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer sapien massa, malesuada at eleifend eu, ultrices quis ex. In at ex in libero vestibulum dictum. Nulla facilisi. Pellentesque sodales sollicitudin arcu at aliquam. Cras volutpat feugiat orci, sit amet consequat massa. Duis cursus mauris feugiat metus condimentum, quis fringilla mi sollicitudin. Proin consequat varius dolor, sit amet fermentum mi condimentum eget. Donec viverra ultricies convallis. Fusce convallis egestas lorem, vitae dapibus lacus consequat dictum. Integer egestas nibh augue, at luctus leo malesuada eget. Duis vitae volutpat urna. Mauris placerat quam vel nulla dictum commodo.
+
+          Cras iaculis porta arcu, vulputate rhoncus mauris fringilla ut. Mauris nec rutrum nibh. Ut pellentesque nisl eu quam aliquam vehicula. Cras consectetur hendrerit blandit. Nam laoreet, elit a venenatis laoreet, nisi erat maximus ipsum, sit amet auctor neque magna vel lectus. Pellentesque scelerisque eget massa non elementum. Nunc nec risus at lectus facilisis dictum. Sed eu auctor eros.
+
+          Suspendisse varius urna dui, at ultrices leo laoreet at. Donec et eros dapibus, suscipit sem vitae, varius nulla. Pellentesque mattis nunc eu ante semper congue. Vivamus vel ultrices felis. Quisque et vestibulum dolor, sit amet consequat purus. Maecenas sodales feugiat sapien, et pulvinar libero sagittis ac. Suspendisse potenti. Cras lorem metus, pharetra a libero sit amet, cursus malesuada nisl. Pellentesque fermentum euismod elementum. Curabitur lobortis, urna eu placerat vestibulum, mi eros consequat dui, a commodo tortor ipsum egestas nisi. Nam tempus, turpis eu sodales malesuada, metus est condimentum dui, eget sagittis diam metus vitae dolor. Vestibulum sed venenatis orci, eget dignissim nisi.
+
+          Vivamus molestie fermentum urna, vitae iaculis dui commodo eget. Fusce at augue eu enim tincidunt suscipit ac pellentesque justo. Duis a maximus ipsum. Quisque volutpat vehicula massa et semper. Suspendisse vitae neque in diam cursus elementum. Mauris tempus tortor faucibus, vehicula est quis, imperdiet arcu. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Sed pretium quam eu ante efficitur volutpat. Maecenas dolor magna, ullamcorper vitae convallis vel, porta id ex. Etiam gravida facilisis massa ac mollis. Morbi efficitur maximus tempor. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris vitae diam rhoncus, placerat nisi eget, rutrum lacus. Mauris feugiat ornare placerat. Praesent blandit bibendum tellus at cursus.</p>
+      </div>
+      <br />
+
+      <section>
+        <arvest-typography variant="h3">Colors</arvest-typography>
+        <hr />
+        <div class="swatch-container">
+          <div class="swatch" style="background-color: var(--white)">
+            <p>White</p>
+            <p>#f8f8f9</p>
+          </div>
+          <div class="swatch" style="background-color: var(--grayscale01)">
+            <p>Grayscale 01</p>
+            <p>#f0f0f0</p>
+          </div>
+          <div class="swatch" style="background-color: var(--grayscale02)">
+            <p>Grayscale 02</p>
+            <p>#e4e4e8</p>
+          </div>
+          <div class="swatch" style="background-color: var(--grayscale03)">
+            <p>Grayscale 03</p>
+            <p>#c9cad0</p>
+          </div>
+          <div class="swatch" style="background-color: var(--grayscale04)">
+            <p>Grayscale 04</p>
+            <p>#aeafb9</p>
+          </div>
+          <div class="swatch" style="background-color: var(--grayscale05)">
+            <p>Grayscale 05</p>
+            <p>#9395a1</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--grayscale06); color: #fff"
+          >
+            <p>Grayscale 06</p>
+            <p>#6e7079</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--grayscale07); color: #fff"
+          >
+            <p>Grayscale 07</p>
+            <p>#494a51</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--black); color: #fff"
+          >
+            <p>Black</p>
+            <p>#252528</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--primary01); color: #fff"
+          >
+            <p>Primary 01</p>
+            <p>#001b44</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--primary02); color: #fff"
+          >
+            <p>Primary 02</p>
+            <p>#00457c</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--secondary01); color: #fff"
+          >
+            <p>Secondary 01</p>
+            <p>#3167b8</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--accent01); color: #fff"
+          >
+            <p>Accent 01</p>
+            <p>#f20000</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--accent02); color: #000"
+          >
+            <p>Accent 02</p>
+            <p>#ffa825</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--accent03); color: #fff"
+          >
+            <p>Accent03</p>
+            <p>#00bc2a</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--accessible-red); color: #fff"
+          >
+            <p>Accessible Red</p>
+            <p>#e40000</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--hover01); color: #fff"
+          >
+            <p>Hover 01</p>
+            <p>#2f77e2</p>
+          </div>
+          <div class="swatch" style="background-color: var(--hover02)">
+            <p>Hover 02</p>
+            <p>#e4ebf7</p>
+          </div>
+          <div class="swatch" style="background-color: var(--hover03)">
+            <p>Hover 03</p>
+            <p>#dde4ef</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--hover04); color: #fff"
+          >
+            <p>Hover 04</p>
+            <p>#25608f</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--hover05); color: #fff"
+          >
+            <p>Hover 05</p>
+            <p>#253c5f</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--tint01); color: #000"
+          >
+            <p>Tint 01</p>
+            <p>#edf0f5</p>
+          </div>
+          <div
+            class="swatch"
+            style="background-color: var(--shadow01); color: #000"
+          >
+            <p>Shadow 01</p>
+            <p>rgba(68, 68, 68, 0.3)</p>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Alerts</arvest-typography>
+        <hr />
+      </section>
+
+      <!--
+      <arvest-alert banner="true">
+        This is an example of a banner alert that will show at the top of the page. <a href="#">amet duis</a>.
+      </arvest-alert>
+      -->
+
+      <arvest-alert style="margin-bottom: 20px">
+        This is an example of the default alert. There is no icon for this alert.
+        <a href="#">amet duis</a>.
+      </arvest-alert>
+
+      <arvest-alert style="margin-bottom: 20px" type="alert">
+        This is an example of an alert. Notice the alert icon.
+        <a href="#">amet duis</a>.
+      </arvest-alert>
+
+      <arvest-alert style="margin-bottom: 20px" type="caution">
+        This is an example of the caution alert. Notice the caution icon.
+        <a href="#">amet duis</a>.
+      </arvest-alert>
+
+      <arvest-alert style="margin-bottom: 20px" type="confirmation">
+        This is an example of the confirmation alert. Notice the confirmation
+        icon. <a href="#">amet duis</a>.
+      </arvest-alert>
+
+      <arvest-alert style="margin-bottom: 20px" type="info">
+        This is an example of the info alert. There is no icon for this alert.
+        <a href="#">amet duis</a>.
+      </arvest-alert>
+    </div>
+
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Form Component
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+
+    <div class="arvest-container">
+      <arvest-form onsubmit="alert('submit')">
+        <arvest-form-textinput
+        elem-id="phone"
+        label="Phone"
+        aria-label="Enter Phone Number"
+        style="width: 100%;"
+        type="tel"
+        mask="(999) 999-9999"
+        error="Enter valid number"></arvest-form-textinput>
+      </arvest-form>
+    </div>
+
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Form Fields - Inputs w/ A11y
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+
+    <div class="arvest-container">
+
+      <div style="display: grid; grid-template-columns: 1fr 1fr; grid-column-gap: 20px;">
+        <arvest-form-textinput
+          elem-id="firstname"
+          label="First Name"
+          aria-label="Enter your First Name"
+          style="width: 100%;"
+          type="text"
+          required="true"
+          disabled="false"
+          error="Please enter your first name.">
+        </arvest-form-textinput>
+
+        <arvest-form-textinput
+          elem-id="lastname"
+          label="Last Name"
+          aria-label="Enter your Last Name"
+          style="width: 100%;"
+          type="text">
+        </arvest-form-textinput>
+      </div>
+
+      <arvest-form-textinput
+        elem-id="address"
+        label="Address"
+        aria-label="Enter your Address"
+        style="width: 100%;"
+        type="text">
+      </arvest-form-textinput>
+
+      <div style="display: grid; grid-template-columns: 3fr 1fr 2fr; grid-column-gap: 20px;">
+        <arvest-form-textinput
+          elem-id="city"
+          label="City"
+          aria-label="Enter your City"
+          style="width: 100%;"
+          type="text">
+        </arvest-form-textinput>
+
+        <arvest-form-textinput
+          elem-id="state"
+          label="State"
+          aria-label="Enter your State"
+          style="width: 100%;"
+          type="text">
+        </arvest-form-textinput>
+
+        <arvest-form-textinput
+          elem-id="zip"
+          label="Zip"
+          aria-label="Enter your Zipcode"
+          style="width: 100%;"
+          type="text">
+        </arvest-form-textinput>
+      </div>
+
+      <arvest-form-textinput
+        ariaLabel="Please create a password"
+        elemId="password"
+        label="Please create a password"
+        style="width: 100%;"
+        type="password">
+      </arvest-form-textinput>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Form Fields - Datepicker
+        </arvest-typography>
+        <hr />
+      </section>
+      <arvest-form-date-picker></arvest-form-date-picker>
+
+      <section>
+        <arvest-typography variant="h3">
+          Form Fields - Dropdown
+        </arvest-typography>
+        <hr />
+      </section>
+
+      <arvest-dropdown label='Categories' options='[{"label":"Agriculture","value":"agriculture"},{"label":"Animals","value":"animals"},{"label":"Art & science","value":"art-science"},{"label":"Colleges","value":"colleges"},{"label":"Food","value":"food"},{"label":"High schools","value":"high-schools"},{"label":"Nature","value":"nature"},{"label":"National landmarks","value":"national-landmarks"},{"label":"Pets","value":"pets"}]'></arvest-dropdown>
+
+      <section>
+        <arvest-typography variant="h3">
+          Form Fields - Selectors
+        </arvest-typography>
+        <hr />
+      </section>
+
+      <arvest-typography variant="h4">Radio</arvest-typography>
+      <br>
+      <arvest-form-check options='[{"value":"a","label":"Option A"},{"value":"b","label":"Option B"},{"value":"c","label":"Option C"},{"value":"d","label":"Option D","disabled":"true"}]' type='radio' name='radioForm'></arvest-form-check>
+      <br>
+
+      <arvest-typography variant="h4">Checkbox</arvest-typography>
+      <br>
+      <arvest-form-check options='[{"value":"a","label":"Option A"},{"value":"b","label":"Option B"},{"value":"c","label":"Option C"},{"value":"d","label":"Option D","disabled":"true"}]' type='checkbox' name='checkboxForm'></arvest-form-check>
+      <br>
+
+      <section>
+        <arvest-typography variant="h3">
+          Form Fields - Address Entry Form
+        </arvest-typography>
+        <hr />
+      </section>
+      <br />
+      <arvest-form-address id="address-form" api-key="AIzaSyDjH9vSClGo1pB9UFWMsJsxKjKJYLVAE3Q" include-territories></arvest-form-address>
+
+      <script>
+        document.getElementById('address-form').addEventListener('addressChange', (e) => console.log(e.detail));
+      </script>
+      <br />
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Ads - 5 column, 5:2 ratio
+        </arvest-typography>
+        <hr />
+      </section>
+
+      <arvest-ad-five-col>Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col color="ocean">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col color="navy">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col bgimage="/assets/images/debit.jpg" opacity="1">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Ads - 5 column, 5:2 ratio, without CTA
+        </arvest-typography>
+      </section>
+
+      <arvest-ad-five-col showcta="false"}>Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col color="ocean" showcta="false">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col color="navy" showcta="false">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col bgimage="/assets/images/debit.jpg" opacity="1" showcta="false">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Ads - 5 column, 2:1 ratio
+        </arvest-typography>
+        <hr />
+      </section>
+
+      <arvest-ad-five-col ratio="21">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col ratio="21" color="ocean">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col ratio="21" color="navy">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col ratio="21" bgimage="/assets/images/debit.jpg" opacity="1">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+
+
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Ads - 5 column, 2:1 ratio, without CTA
+        </arvest-typography>
+      </section>
+
+      <arvest-ad-five-col ratio="21" showcta="false"}>Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col ratio="21" showcta="false" color="ocean" >Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col ratio="21" showcta="false" color="navy">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+      <br />
+      <arvest-ad-five-col ratio="21" showcta="false" bgimage="/assets/images/debit.jpg" opacity="1">Lorem ipsum dolor sit amet consectetur.</arvest-ad-five-col>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Ads - 4 column
+        </arvest-typography>
+        <hr />
+      </section>
+
+      <arvest-ad-four-col>Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col color="ocean">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col color="navy">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col bgimage="/assets/images/debit.jpg" opacity="1">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Ads - 4 column, without CTA
+        </arvest-typography>
+      </section>
+
+      <arvest-ad-four-col showcta="false"}>Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col color="ocean" showcta="false">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col color="navy" showcta="false">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col showcta="false" bgimage="/assets/images/debit.jpg" opacity="1">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Ads - 4 column, small
+        </arvest-typography>
+      </section>
+
+      <arvest-ad-four-col size="small">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col size="small" color="ocean">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col size="small" color="navy">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col size="small" bgimage="/assets/images/debit.jpg" opacity="1">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Ads - 4 column, large
+        </arvest-typography>
+      </section>
+
+      <arvest-ad-four-col size="large">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col size="large" color="ocean">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col size="large" color="navy">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+      <br />
+      <arvest-ad-four-col size="large" bgimage="/assets/images/debit.jpg" opacity="0.8">Lorem ipsum dolor sit amet consectetur.</arvest-ad-four-col>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card - Fullwidth
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-card-fullwidth></arvest-card-fullwidth>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card - 4 column: Text / Glyph
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-card-4-col-text-glyph></arvest-card-4-col-text-glyph>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card - 4 column: Text / Image
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-card-4-col-text-image></arvest-card-4-col-text-image>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card - 4 column: Text / Image / CTA
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-card-4-col-text-img-cta></arvest-card-4-col-text-img-cta>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card - 3 column: Text / Image
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-card-3-col-text-image></arvest-card-3-col-text-image>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card - 3 column: Text / Image / CTA
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-card-3-col-text-img-cta></arvest-card-3-col-text-img-cta>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card - 3 column: Text / CTA
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-card-3-col-text-cta></arvest-card-3-col-text-cta>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card - 4 column: Text / CTA / Icons
+        </arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-card-fullwidth-product-features
+      card-title="Free Blue™"
+      description="Our most popular account comes with unlimited check writing, a free debit card with custom design and up to $400 in overdraft coverage."
+      list-items="Free custom debit card|Overdraft protection up to $400|No monthly fee if enrolled in eStatements"
+      icons="lock-regular|lock-regular|lock-regular|lock-regular|lock-regular|lock-regular|lock-regular|lock-regular"
+      icon-tips="Lorem ipsum dolor set.|Lorem ipsum dolor set.|Lorem ipsum dolor set.|Lorem ipsum dolor set.|Lorem ipsum dolor set.|Lorem ipsum dolor set.|Lorem ipsum dolor set.|Lorem ipsum dolor set."
+      primary-cta-title="Apply now"
+      primary-cta-url="#"
+      secondary-cta-title="Get info"
+      secondary-cta-url="#"
+    ></arvest-card-fullwidth-product-features>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card Selector - Category Card
+        </arvest-typography>
+        <hr />
+      </section>
+      <div style="width: 465px; height: 407.19px; position: relative;">
+        <arvest-debit-credit-card-selector linkcta="Subject name" label="Card design name" bgimage="/assets/images/mississippi_river.png" show-link show-label show-button></arvest-debit-credit-card-selector>
+      </div>
+    </div>
+
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">
+          Arvest Card Selector - Category Card Grid
+        </arvest-typography>
+        <hr />
+      </section>
+      <arvest-debit-credit-card-grid></arvest-debit-credit-card-grid>
+    </div>
+
+
+    <div class="arvest-container">
+      <arvest-typography variant="h2">Modals</arvest-typography>
+        <hr />
+      </section>
+      <script>
+        const showModal = (id) => {
+          document.getElementById(id).setAttribute('visible', true);
+        };
+        const hideModal = (id) => {
+          document.getElementById(id).setAttribute('visible', false);
+        }
+      </script>
+      <arvest-button-primary label="Show Small Modal" onclick="showModal('overlay-1')"></arvest-button-primary>
+      <arvest-button-primary label="Show Large Modal" onclick="showModal('overlay-2')"></arvest-button-primary>
+      <arvest-button-primary label="Show No-Scroll Modal" onclick="showModal('overlay-3')"></arvest-button-primary>
+
+      <arvest-overlay id="overlay-1">
+        <arvest-modal heading="Modal title" id="testModal" size="small">
+        <p>Woohoo, you're reading this text in a modal!</p>
+        <arvest-modal-footer>
+          <div class="button-wrap">
+            <arvest-button-secondary issmall label="Cancel" onclick="hideModal('overlay-1')" style="margin-right: .75rem"></arvest-button-secondary>
+            <arvest-button-primary issmall label="Confirm" onclick="hideModal('overlay-1')"></arvest-button-primary>
+          </div>
+        </arvest-modal-footer>
+        </arvest-modal>
+      </arvest-overlay>
+
+      <arvest-overlay id="overlay-2">
+        <arvest-modal heading="Modal with lots of text" id="testModal2" size="large">
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque ex dolor, varius ac nisl a, ullamcorper laoreet magna. In fringilla nibh et odio elementum condimentum. Aliquam ut diam a nisi tristique tincidunt ut quis nisl. Ut molestie mauris quam, non sodales lacus vestibulum vel. Sed vestibulum erat elit, nec suscipit risus sodales eget. Etiam rutrum massa eu risus blandit condimentum. Fusce a lacinia nibh. Cras ut dui diam. Cras dignissim finibus nibh non consectetur. Donec ut sem nisi.</p>
+          <p>Aenean maximus condimentum lorem sit amet hendrerit. Donec non molestie lacus. Mauris hendrerit urna ut fringilla ullamcorper. Sed sollicitudin urna vitae maximus dictum. Morbi eu egestas purus, et ullamcorper diam. Maecenas scelerisque tempus finibus. Duis sit amet leo in risus suscipit elementum.</p>
+          <p>Vivamus semper urna sit amet malesuada sagittis. Interdum et malesuada fames ac ante ipsum primis in faucibus. Nam massa risus, fringilla id leo nec, dictum mattis nunc. Maecenas ac felis vitae est faucibus efficitur. Integer id luctus diam, at volutpat magna. Cras feugiat sem congue ligula imperdiet, nec iaculis arcu consectetur. Cras ac volutpat metus. Nam risus augue, ultricies non tempor et, facilisis sit amet nulla. Mauris feugiat ex quis eros elementum dapibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Aliquam et luctus massa.        </p>
+          <p>Integer nec dignissim ligula. Aliquam erat volutpat. Mauris eu tellus non mauris malesuada maximus. Aliquam congue, enim nec aliquet sodales, arcu nisi porta elit, et venenatis dolor sem eu nulla. Nullam neque leo, congue sed metus id, tempus ornare erat. Integer ex nisl, consectetur eget sagittis at, laoreet malesuada sem. Maecenas tempus consequat sem vel iaculis. Vestibulum non blandit ex. Mauris ac dui in tortor cursus auctor ac et magna. In placerat nulla lacus, sit amet efficitur erat lacinia vel.</p>
+          <p>In efficitur sagittis diam eu iaculis. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Quisque mollis sem orci, sed sollicitudin ligula venenatis vel. In metus eros, scelerisque faucibus dolor porttitor, dictum rhoncus arcu. Sed feugiat, mauris id aliquam euismod, nibh ex ornare sem, nec vestibulum urna magna sit amet metus. Etiam commodo, eros ut tincidunt congue, purus leo rhoncus massa, ut lacinia enim velit vel libero. Proin vehicula erat mattis risus iaculis, at efficitur metus finibus. Nam non felis tincidunt, interdum felis ut, tristique mauris. Integer dapibus, erat vel facilisis viverra, erat mauris commodo augue, vitae aliquam elit dolor ac mi. Nam egestas elit at purus feugiat, vitae congue ipsum ornare. Maecenas ullamcorper sagittis ligula, vel dictum lorem dapibus eu. Fusce a tellus iaculis orci vehicula tincidunt. Donec non sem quis mauris volutpat tempor ullamcorper mattis lorem. Cras condimentum mattis est nec scelerisque. Quisque vel feugiat nibh, et pellentesque metus.</p>
+        </arvest-modal>
+      </arvest-overlay>
+
+      <arvest-overlay id="overlay-3" noscroll>
+        <arvest-modal heading="No Scroll Modal" id="testModal3" size="small">
+        <p>Scrolling underneath this modal should be prevented by a <code>overflow: hidden</code> rule on the body in the global css.</p>
+        <arvest-modal-footer>
+          <div class="button-wrap">
+            <arvest-button-secondary issmall label="Cancel" onclick="hideModal('overlay-3')" style="margin-right: .75rem"></arvest-button-secondary>
+            <arvest-button-primary issmall label="Confirm" onclick="hideModal('overlay-3')"></arvest-button-primary>
+          </div>
+        </arvest-modal-footer>
+        </arvest-modal>
+      </arvest-overlay>
+
+      <script>
+        const modal = document.getElementById('testModal');
+        const bigModal = document.getElementById('testModal2');
+        const noScrollModal = document.getElementById('testModal3');
+        const overlay = document.getElementById('overlay-1');
+        const bigOverlay = document.getElementById('overlay-2');
+        const noScrollOverlay = document.getElementById('overlay-3');
+        modal.addEventListener('clickClose', event => { hideModal('overlay-1') });
+        bigModal.addEventListener('clickClose', event => { hideModal('overlay-2') });
+        noScrollModal.addEventListener('clickClose', event => { hideModal('overlay-3') });
+        overlay.addEventListener('overlayClosed', event => {console.log('overlay closed')});
+        overlay.addEventListener('overlayOpened', event => {console.log('overlay opened')});
+      </script>
+    </div>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Footer Without Nav</arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-footer withnav="false"></arvest-footer>
+
+    <div class="arvest-container">
+      <section>
+        <arvest-typography variant="h3">Footer</arvest-typography>
+        <hr />
+      </section>
+    </div>
+    <arvest-footer>
+      <arvest-footer-content>
+        <arvest-typography slot="header" variant="navigation" color="white">
+          Investments and insurance products:
+        </arvest-typography>
+        <li slot="list-item" class="list-item">
+          <arvest-typography variant="caption" color="white">
+            Not a deposit
+          </arvest-typography>
+        </li>
+        <li slot="list-item">
+          <arvest-typography variant="caption" color="white">
+            Not guaranteed by the bank or its affiliates
+          </arvest-typography>
+        </li>
+        <li slot="list-item">
+          <arvest-typography variant="caption" color="white">
+            Not FDIC-insured, and not insured by any federal government agency
+          </arvest-typography>
+        </li>
+        <li slot="list-item">
+          <arvest-typography variant="caption" color="white">
+            May go down in value
+          </arvest-typography>
+        </li>
+      </arvest-footer-content>
+      <arvest-footer-content>
+        <arvest-typography slot="header" variant="navigation" color="white">
+          Product & service providers
+        </arvest-typography>
+
+        <li slot="list-item" class="list-item">
+          <arvest-typography variant="caption" color="white">
+            Investment and trust products and services are provided by Arvest
+            Investments, Inc., doing business as Arvest Wealth Management,
+            member FINRA/SIPC, an SEC-registered investment adviser and a
+            subsidiary of Arvest Bank. The Investment Management Group is the
+            investment advisory group of Arvest Wealth Management.
+          </arvest-typography>
+        </li>
+        <li slot="list-item">
+          <arvest-typography variant="caption" color="white">
+            Securities are offered and cleared through Pershing, LLC, a BNY
+            Mellon company, member NYSE/SIPC.
+          </arvest-typography>
+        </li>
+        <li slot="list-item">
+          <arvest-typography variant="caption" color="white">
+            Insurance products are made available through Arvest Insurance,
+            Inc., which is registered as an insurance agency. Arvest Insurance
+            products are underwritten by unaffiliated insurance companies.
+          </arvest-typography>
+        </li>
+      </arvest-footer-content>
+    </arvest-footer>
+  </body>
+</html>

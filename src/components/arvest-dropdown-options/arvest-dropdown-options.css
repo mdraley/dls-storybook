@@ -1,0 +1,54 @@
+:host {
+  display: block;
+}
+
+.options {
+  position: absolute;
+  display: inline-block;
+  top: 100%;
+  left: -1px;
+  right: 0;
+  border-radius: 0 0 3px 3px;
+  box-shadow: 0 3px 3px var(--grayscale05);
+  border-top: 1px solid var(--white);
+  border-left: 1px solid var(--grayscale02);
+  border-right: 1px solid var(--grayscale02);
+  border-bottom: 1px solid var(--grayscale02);
+  background-color: var(--white);
+  transition: all 0.5s;
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+  z-index: 4; /* Arbitrary, but this places it above the state dropdown in the address entry form. */
+}
+
+.options.scroll {
+  max-height: 393px;
+  overflow-y: scroll;
+}
+
+.options.open {
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+}
+
+.option {
+  position: relative;
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 12px;
+  color: var(--black);
+  background-color: var(--white);
+  line-height: 60px;
+  cursor: pointer;
+  transition: all 0.5s;
+  border: 0;
+  width: 100%;
+}
+
+.option:hover {
+  cursor: pointer;
+  background-color: var(--hover02);
+}

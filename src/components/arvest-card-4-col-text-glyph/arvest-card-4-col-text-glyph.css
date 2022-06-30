@@ -1,0 +1,143 @@
+:host {
+  display: block;
+}
+
+.container {
+  background-color: var(--white);
+  margin: 0 auto;
+  max-width: var(--max-width-outer);
+  padding: var(--spacing04) 0;
+  width: 100%;
+}
+
+.headline {
+  margin: 0 0 var(--spacing04);
+  text-align: center;
+  width: 100%;
+}
+
+.card-container {
+  column-gap: var(--spacing02);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  margin: 0 auto;
+  max-width: var(--max-width-inner);
+  padding: 0 var(--spacing02);
+}
+
+.card {
+  border-right: 0.5px solid var(--grayscale05);
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+  justify-self: stretch;
+}
+
+.card:last-of-type {
+  border-right: 1px solid transparent;
+}
+
+.card-title {
+  margin-bottom: 1rem;
+}
+
+.card-body {
+  flex-grow: 3;
+}
+
+.glyph {
+  text-align: center;
+}
+
+.glyph>img {
+  height: 100%;
+  object-fit: contain;
+}
+
+.card-content {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 2;
+  flex-wrap: nowrap;
+  justify-content: stretch;
+  padding: var(--spacing02) var(--spacing02);
+}
+
+.cta {
+  margin: var(--spacing03) 0 0 0;
+}
+
+/* Responsive */
+/* Mobile */
+@media (max-width: 767px) {
+  .container {
+    padding: var(--spacing03) 0;
+  }
+
+  .headline {
+    margin: 0 var(--spacing01) var(--spacing03);
+    text-align: left;
+    width: auto;
+  }
+
+  .card-container {
+    grid-template-columns: 1fr;
+    padding: 0 var(--spacing01);
+    row-gap: var(--spacing02);
+  }
+
+  .card {
+    border-right: none;
+    border-bottom: 0.5px solid var(--grayscale05);
+    display: grid;
+    direction: rtl;
+    grid-template-columns: 1fr 4fr;
+  }
+
+  .card:last-of-type {
+    border: none;
+  }
+
+  .card-title {
+    margin-bottom: 0.5rem;
+  }
+
+  .glyph {
+    min-width: 60px;
+    padding-left: var(--spacing01);
+    text-align: right;
+  }
+
+  .glyph>img {
+    height: unset;
+    max-width: 75px;
+    object-fit: contain;
+    width: 100%;
+  }
+
+  .card-content {
+    padding: 0 0 var(--spacing02) 0;
+    direction: ltr;
+  }
+
+  .cta {
+    margin: var(--spacing02) 0 0;
+  }
+}
+
+/* Tablet */
+/* @media (min-width: 768px) and (max-width: 992px) {
+  .container {}
+
+  .headline {}
+
+  .card-container {}
+
+  .card {}
+
+  .glyph {}
+
+  .card-content {}
+
+  .cta {}
+} */

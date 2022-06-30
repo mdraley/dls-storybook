@@ -1,0 +1,53 @@
+:host {
+  display: block;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.closeButton {
+  width: 24px;
+  height: 24px;
+  border: 0 none;
+  transition: opacity .1s ease-in-out;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  filter: invert(47%) sepia(5%) saturate(570%) hue-rotate(192deg) brightness(92%) contrast(90%);
+}
+
+.closeButton__icon {
+  margin-top: -2px;
+}
+
+.closeButton:hover {
+  cursor: pointer;
+  /*background-color: var(--hover02);*/
+}
+
+.closeButton:active {
+  opacity: .7;
+}
+
+.closeButton:focus-visible {
+  outline: 0;
+  border: 1px solid black;
+  filter: invert(41%) sepia(62%) saturate(3260%) hue-rotate(202deg) brightness(92%) contrast(93%);
+}
+
+.closeButton__background {
+  position: relative;
+  top: -1px;
+  background-color: transparent;
+  transition: background-color .2s ease-in-out;
+  width: 24px;
+  height: 24px;
+}
+
+.closeButton__background:hover {
+  background-color: var(--hover02);
+}

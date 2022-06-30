@@ -1,0 +1,71 @@
+:host {
+  display: inline-block;
+  width: max-content;
+}
+
+.default,
+.button {
+  max-width: 320px;
+  min-width: 120px;
+  height: 40px;
+  border-radius: 2px;
+  padding: 1px 6px;
+  align-items: center;
+}
+
+.default {
+  border: none;
+}
+
+.button {
+  background-color: transparent;
+  border: solid 1px var(--white);
+  transition: 0.3s;
+}
+
+.button:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+}
+
+.button:active {
+  background-color: transparent;
+}
+
+.button:focus {
+  background-color: var(--white);
+  outline: solid 1px;
+  outline-offset: calc(var(--spacing00) / 2);
+  outline-color: var(--white);
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.button-spinner {
+  margin-right: var(--spacing00);
+}
+
+@media (max-width: 767px) {
+
+  .default,
+  .button {
+    width: 100%;
+    min-width: 120px;
+    height: 40px;
+    border-radius: 2px;
+  }
+
+  .default {
+    border: none;
+  }
+
+  .button {
+    background-color: transparent;
+    border: solid 1px var(--white);
+  }
+}
