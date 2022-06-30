@@ -27,7 +27,7 @@
     "build": "npm-run-all -s build:stencil docs.data build:storybook",
     "build:stencil": "stencil build --docs",
     "build:storybook": "build-storybook --output-dir ./dist-storybook -s ./dist-stencil/arveststencil",
-    "build-storybook": "build-storybook -o docs-build -s ./dist-stencil/arveststencil",
+    "build-storybook": "build-storybook --output-dir ./dist-storybook -s ./dist-stencil/arveststencil",
     "chromatic": "npm-run-all -s build:stencil build:storybook chromatic:publish",
     "chromatic:publish": "npx chromatic --exit-zero-on-changes --auto-accept-changes --project-token=56652b9a0ba5 --storybook-build-dir ./dist-storybook",
     "start": "stencil build --dev --watch --serve",
