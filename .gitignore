@@ -3,7 +3,7 @@ dist/
 www/
 loader/
 dist-stencil/
-dist-storybook/
+
 
 # Logs, etc
 *~
