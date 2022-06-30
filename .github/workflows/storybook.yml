@@ -1,7 +1,8 @@
 name: Build and Deploy
 on: 
   push:
-    branches: main
+    branches: 
+    - main # if any push happens on branch `main`, run this workflow. You could also add `paths` to detect changes in specific folder
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
