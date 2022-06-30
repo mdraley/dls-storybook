@@ -1,0 +1,14 @@
+:host {
+  display: block;
+  width: inherit;
+}
+
+a {
+  display: inline-block;
+  width: inherit;
+}
+
+img {
+  max-height: var(--spacing03);
+  width: inherit;
+}

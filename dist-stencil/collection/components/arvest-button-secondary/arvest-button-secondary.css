@@ -1,0 +1,85 @@
+:host {
+  display: inline-block;
+  width: max-content;
+}
+
+.default,
+.button {
+  border-radius: 2px;
+  height: 40px;
+  max-width: 320px;
+  min-width: 120px;
+  width: 100%;
+  padding: 1px 6px;
+  align-items: center;
+}
+
+.default {
+  border: none;
+}
+
+.button {
+  background-color: transparent;
+  border: solid 1px var(--secondary01);
+  transition: 0.3s;
+}
+
+.button:hover {
+  border: solid 1px var(--hover01);
+  cursor: pointer;
+  background-color: var(--hover02);
+}
+
+.button:active {
+  border: solid 1px var(--secondary01);
+  background-color: transparent;
+}
+
+.button:focus {
+  outline: solid 1px;
+  outline-offset: calc(var(--spacing00) / 2);
+  outline-color: var(--secondary01);
+}
+
+.button-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0 2rem;
+}
+
+.button-spinner {
+  margin-right: var(--spacing00);
+}
+
+/* Ads: secondary button styles */
+.button.ad {
+  border: transparent;
+  background-color: var(--white);
+}
+
+.button.ad:hover {
+  border: transparent;
+  cursor: pointer;
+  background-color: var(--hover02);
+}
+
+@media (max-width: 767px) {
+
+  .default,
+  .button {
+    width: 100%;
+    min-width: 120px;
+    height: 40px;
+    border-radius: 2px;
+  }
+
+  .default {
+    border: none;
+  }
+
+  .button {
+    background-color: transparent;
+    border: solid 1px var(--secondary01);
+  }
+}

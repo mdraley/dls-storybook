@@ -1,0 +1,89 @@
+:host {
+  display: block;
+}
+
+[aria-hidden="true"] {
+  display: none;
+}
+
+.alert {
+  padding: var(--spacing02);
+}
+
+.default {
+  background-color: var(--white);
+}
+
+.banner {
+  box-shadow: 0 0 8px rgba(147, 149, 161, 0.7);
+  margin: 0;
+  max-width: var(--max-width-outer);
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.inline {
+  box-shadow: 0 0 8px rgba(147, 149, 161, 0.7);
+  margin: var(--spacing02) auto;
+  max-width: var(--max-width-inner);
+}
+
+.alert-inner {
+  display: flex;
+  flex-wrap: nowrap;
+  margin: 0 auto;
+  max-width: var(--max-width-inner);
+}
+
+.visual-indicator {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.message {
+  flex-grow: 3;
+}
+
+.dismiss {
+  align-items: center;
+  display: flex;
+}
+
+button {
+  background: none;
+  border: 0;
+  cursor: pointer;
+  height: 24px;
+  margin: 0;
+  padding: 0;
+  width: 24px;
+}
+
+.dismiss .icon {
+  width: 16px;
+}
+
+a {
+  display: inherit;
+}
+
+/* Icon Sizes */
+.icon {
+  margin: 0 var(--spacing02) 0 0;
+  padding: 0;
+}
+
+.icon.alert {
+  width: 22px;
+}
+
+.icon.caution {
+  width: 23px;
+}
+
+.icon.confirmation,
+.icon.info {
+  width: 24px;
+}

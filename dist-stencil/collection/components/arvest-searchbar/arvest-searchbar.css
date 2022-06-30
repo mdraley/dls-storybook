@@ -1,0 +1,160 @@
+:host {
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+}
+
+.wrapper.mobile.takeover {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 99;
+  background-color: var(--grayscale01);
+  width: 100%;
+  height: 88px;
+}
+
+a {
+  display: flex;
+  width: 1.5rem;
+}
+
+.chevron {
+  margin-top: var(--spacing03);
+  margin-left: var(--spacing01);
+}
+
+.chevron:hover {
+  cursor: pointer;
+}
+
+.searchbar-container {
+  align-items: flex-start;
+  background-color: var(--primary02);
+  border-radius: 2px;
+  color: var(--white);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  padding: 3px var(--spacing00);
+  transition: 0.3s;
+  width: 100%;
+}
+
+.searchbar-container.mobile.takeover {
+  margin: var(--spacing02) var(--spacing01) var(--spacing02) var(--spacing00);
+}
+
+.searchbar-container.reverse {
+  background-color: var(--white);
+  color: var(--grayscale05);
+}
+
+.searchbar-container:hover {
+  box-shadow: 0 4px 8px var(--shadow01);
+  cursor: text;
+}
+
+.searchbar-container:hover .searchbar-input {
+  color: var(--black);
+}
+
+.searchbar-input-icon-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.searchbar-input-icon-wrapper arvest-icon.hidden {
+  display: none;
+}
+
+.searchbar-input {
+  background-color: transparent;
+  border: none;
+  caret-color: var(--secondary01);
+  color: inherit;
+  font-family: "proxima-nova", sans-serif;
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 150%;
+  margin-right: var(--spacing00);
+  width: 100%;
+}
+
+.searchbar-container.mobile .searchbar-input{
+  height: 32px;
+}
+
+.searchbar-input:hover {
+  color: var(--black);
+}
+
+.searchbar-input:focus {
+  background-color: var(--white);
+  border: none;
+  color: var(--black);
+  outline: none;
+}
+
+.searchbar-input:focus::placeholder,
+.searchbar-input:hover::placeholder {
+  color: var(--black);
+}
+
+.searchbar-commonsearches--headline,
+.searchbar-commonsearches--wrapper--hyperlinks,
+.searchbar--hyperlinks--wrapper {
+  color: var(--black);
+  padding: var(--spacing00) 0 0 0;
+}
+
+.searchbar-commonsearches--headline {
+  margin-top: var(--spacing01);
+}
+
+.searchbar-commonsearches--hyperlinks {
+  color: var(--secondary01);
+  display: inline;
+}
+
+.searchbar--hyperlinks {
+  color: var(--secondary01);
+  display: inline;
+}
+
+/* Microsite Mobile Styles */
+
+.search-results.mobile.takeover {
+  position: fixed;
+  top: 88px;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  background-color: var(--white);
+  padding: 0 var(--spacing01) var(--spacing02) var(--spacing02);
+}
+
+.searchbar-container.mobile {
+  background-color: var(--white);
+  box-shadow: 0 1px 3px var(--grayscale05);
+}
+
+.searchbar-container.mobile .searchbar-input::placeholder {
+  color: var(--grayscale05);
+}
+
+.searchbar-container.mobile .searchbar-input {
+  color: var(--black);
+}
+
+.searchbar-container.mobile arvest-icon {
+  filter: invert(0.4) !important;
+}
+
+.searchbar-container.mobile.takeover arvest-icon {
+  filter: none !important;
+}

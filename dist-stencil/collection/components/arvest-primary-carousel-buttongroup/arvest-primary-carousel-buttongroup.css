@@ -1,0 +1,61 @@
+:host {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  padding: 0 calc(var(--spacing04) * 2);
+  width: 100%;
+}
+
+.btngroup-container {
+  background-color: white;
+  border-radius: 16px 2px;
+  box-shadow: 0 0 8px var(--shadow01);
+  display: flex;
+  justify-content: center;
+  max-width: 775px;
+  padding: var(--spacing01) 0;
+}
+
+.btngroup-btn {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  padding: 0 var(--spacing03);
+}
+
+.btngroup-btn:hover {
+  cursor: pointer;
+}
+
+.btngroup-btn--rightdivider {
+  border-right: 1px solid var(--grayscale04);
+}
+
+.btngroup-btn--underline {
+  background-color: var(--hover01);
+  border-radius: 2px 0;
+  height: 4px;
+  margin-top: var(--spacing00);
+  position: absolute;
+  top: calc(var(--spacing00) + 2px);
+  width: 100%;
+}
+
+.btngroup-btn--wrapper {
+  display: inline-block;
+  position: relative;
+}
+
+/* Custom breakpoint to resolve headline bug */
+@media (max-width: 1020px) {
+  .btngroup-container {
+    background-color: transparent;
+    border-radius: 0;
+    box-shadow: none;
+    padding: 0;
+  }
+
+  .btngroup-container--mobile-item {
+    margin-right: var(--spacing00);
+  }
+}
